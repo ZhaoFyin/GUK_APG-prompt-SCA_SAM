@@ -38,6 +38,12 @@ GUK-APG-prompt-SCA-SAM/
 │   ├── focal.py                 # Focal 类损失函数
 │   └── useful_loss.py           # 复合损失函数与分割损失
 ├── pretrain_weight/             # 预训练权重
+│   ├── embedding_9.json
+│   ├── embedding_9_dict.pt
+│   ├── epoch_64_6907.pth
+│   ├── org.pt
+│   ├── sam_vit_b_01ec64.pth
+│   └── sca.pth
 ├── fig/                         # 可视化结果保存目录
 ├── MakeModel.py                 # GUK-APG prompt SCA-SAM 总体模型定义
 ├── dataset.py                   # 数据集读取、知识因子读取、提示 JSON 读取
@@ -56,7 +62,7 @@ GUK-APG-prompt-SCA-SAM/
 ├── draw_unit_split_fig.py       # 地理单元划分结果可视化
 └── draw_utils.py                # 绘图辅助函数
 ```
-
+由于文件体积较大，未将权重文件 `sam_vit_b_01ec64.pth` 上传至 GitHub 仓库，该权重为sam官方公开的vit-b版本的权重，网上能够公开下载。
 ## 3. 数据集准备
 
 当前代码采用类似 VOC 的滑坡分割数据组织形式。建议将数据集整理为如下结构：
